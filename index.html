@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        .texto{
+            background-color: tomato;
+            color: aliceblue;
+            font-size: 30px;
+        }
+
+        
+        
+    </style>
+
+
+
+    <h1>Aula de JS</h1>
+
+
+    <p class='texto' id="textoPersonalizado">Aqui vai ser meu texto personalizado </p>
+
+
+
+
+
+    <script>
+
+        // console.log = exibir no console
+        // F12 para abrir console no index
+        console.log('Salve tropa..............')
+
+        // Variaveis
+
+        numero = 1 
+        texto = 'texto'
+        NumeroQuebrado = 6.8
+        VerdadeiroFalso = false
+
+
+        //Operadores Aritmedicos
+        // + soma
+        // - subtração
+        // * multiplicação
+        // / divisão
+
+        console.log(numero, texto, NumeroQuebrado, VerdadeiroFalso)
+        console.log(1 + parseInt('1')) // parseint = transformar string em numero inteiro
+
+        //Operadores logicos
+        // = igual
+        // != diferente
+        // > maior
+        // < menor
+        // >= maior igual
+        // <= menor igual
+
+        console.log(1 === 1)
+        console.log(1 != 1)
+
+
+
+        if (1 == 1){
+            console.log('estou dentro do IF')
+        }else if (2 == 2){
+            console.log('estou dentro do ELSE IF')          
+        }else{
+            console.log('estou dentro do ELSE')
+        }
+
+        
+
+        for (i = 0; i < 5; i++){
+            console.log('valor de 1: ' + i)
+        }
+
+        contador = 0
+        while (contador < 10){
+            
+            contador++
+
+            if (contador == 7){
+                continue
+            }
+
+            if (contador == 5){
+                break
+            }
+            console.log('valor de contador: ' + contador)
+           
+        }
+
+       
+
+        function funcaoTop() {
+            alert('minha função funcionou')
+        }
+        
+        // funcaoTop()
+
+        function adicionarTexto() {
+            alert('Deseja adicionar o texto')
+            // console.log(document.getElementById)(''textoPersonalizado').innerHTML)
+            // DOM -> DOCUMENT OBJECT MODEL
+
+            textoLocal = document.getElementById('textoPersonalizado').innerHTML
+            console.log(textoLocal)
+
+            document.getElementById('texoPersonalizado').innerHTML = 'Um texto do balacubaco'
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
